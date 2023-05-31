@@ -1,0 +1,35 @@
+.section {
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-top__heading {
+    font-size: 3.6rem;
+    color: #232323;
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
+  &-icons {
+    display: flex;
+    gap: 0 1rem;
+  }
+  &-icon {
+    box-shadow: 0px 1px 2px 0px rgba(#000, 0.2);
+    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #272727;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $color-hover;
+      color: #fff;
+    }
+  }
+}

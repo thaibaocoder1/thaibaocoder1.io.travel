@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="main-content">
+        <div class="navbar">
+          <a href="#" class="navbar__logo">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="Tour"
+              class="navbar__img"
+            />
+          </a>
+          <nav class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Tour</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link" id="page">Pages</a>
+              <ul class="subnav">
+                <li class="subnav-item">
+                  <a href="#" class="subnav-item__link">Blog</a>
+                </li>
+                <li class="subnav-item">
+                  <a href="#" class="subnav-item__link">Destination</a>
+                </li>
+              </ul>
+            </li>
+            <ul class="subnav-mobile">
+              <li class="subnav-item">
+                <a href="#" class="subnav-item__link">Blog</a>
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-item__link">Destination</a>
+              </li>
+            </ul>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Contact</a>
+            </li>
+          </nav>
+          <div class="navbar-menu">
+            <i class="fa-solid fa-bars navbar-menu__icon"></i>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="main-content">
+          <div class="hero-wrapper">
+            <div class="hero-content">
+              <h1 class="hero-content__heading">Your world of joy</h1>
+              <p class="hero-conent__desc">
+                Find what makes you happy anytime, anywhere
+              </p>
+              <div class="hero-search">
+                <div class="destination-search">
+                  <div class="destination-item">
+                    <i class="fa-solid fa-location-dot destination-icon"></i>
+                    <div class="detination-info">
+                      <p class="destination-title">Location</p>
+                      <p class="destination-ques">
+                        Where are you going?
+                        <i class="fa fa-caret-down"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="destination-wrapper">
+                    <div class="destination-item">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <div class="detination-info">
+                        <p class="destination-title">Date</p>
+                        <span class="destination-date">25/05/2023</span>
+                      </div>
+                    </div>
+                    <div class="destination-item">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <div class="detination-info">
+                        <p class="destination-title">Check out</p>
+                        <span class="destination-date">26/05/2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="hero-btn">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top">
+        <div class="main-content">
+          <div class="top-tour">
+            <h2 class="top-tour__heading">Top Destinations</h2>
+            <ul class="top-images">
+              <i class="fa fa-arrow-left top-prev"></i>
+              <div class="top-wrapper">
+                <div class="top-wrapper__item">
+                  <div class="top-item">
+                    <a href="#" class="top-link">
+                      <img src="./assets/images/destination-1.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="top-content">
+                    <a href="#" class="top-view">California</a>
+                    <p class="top-quantity">17 Tour</p>
+                  </div>
+                </div>
+                <div class="top-wrapper__item">
+                  <div class="top-item">
+                    <a href="#" class="top-link">
+                      <img src="./assets/images/destination-1.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="top-content">
+                    <a href="#" class="top-view">California</a>
+                    <p class="top-quantity">17 Tour</p>
+                  </div>
+                </div>
+                <div class="top-wrapper__item">
+                  <div class="top-item">
+                    <a href="#" class="top-link">
+                      <img src="./assets/images/destination-1.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="top-content">
+                    <a href="#" class="top-view">California</a>
+                    <p class="top-quantity">17 Tour</p>
+                  </div>
+                </div>
+                <div class="top-wrapper__item">
+                  <div class="top-item">
+                    <a href="#" class="top-link">
+                      <img src="./assets/images/destination-1.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="top-content">
+                    <a href="#" class="top-view">California</a>
+                    <p class="top-quantity">17 Tour</p>
+                  </div>
+                </div>
+                <div class="top-wrapper__item">
+                  <div class="top-item">
+                    <a href="#" class="top-link">
+                      <img src="./assets/images/destination-1.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="top-content">
+                    <a href="#" class="top-view">California</a>
+                    <p class="top-quantity">17 Tour</p>
+                  </div>
+                </div>
+              </div>
+              <i class="fa fa-arrow-right top-next"></i>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="main-content">
+          <div class="section-top">
+            <h2 class="section-top__heading">Recommended for you</h2>
+            <div class="section-icons">
+              <div class="section-icon">
+                <i class="fa fa-arrow-left"></i>
+              </div>
+              <div class="section-icon">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <section class="popular-list">
+            <article class="popular-item">
+              <figure class="popular-images">
+                <img
+                  src="./assets/images/tour-1.avif"
+                  alt=""
+                  class="popular-img"
+                />
+                <div class="popular-thumb">
+                  <span class="popular-features">Featured</span>
+                  <i class="fa fa-heart"></i>
+                  <img src="./assets/images/person-1.avif" alt="" />
+                </div>
+              </figure>
+              <div class="popular-content">
+                <span class="popular-title">
+                  <i class="fa fa-location-dot"></i>
+                  New York, United States
+                </span>
+                <h3 class="popular-heading">
+                  <a href="#" class="popular-link"
+                    >Two Hour Walking Tour of Manhattan</a
+                  >
+                </h3>
+                <div class="popular-rate">
+                  <i class="fa fa-star"></i>
+                  <span>5</span>
+                  <span class="popular-reviews">(3 Reviews)</span>
+                </div>
+                <div class="popular-price">
+                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-second">
+                    <i class="fa-solid fa-clock"></i>
+                    10 hours
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="popular-item">
+              <figure class="popular-images">
+                <img
+                  src="./assets/images/tour-1.avif"
+                  alt=""
+                  class="popular-img"
+                />
+                <div class="popular-thumb">
+                  <span class="popular-features">Featured</span>
+                  <i class="fa fa-heart"></i>
+                  <img src="./assets/images/person-1.avif" alt="" />
+                </div>
+              </figure>
+              <div class="popular-content">
+                <span class="popular-title">
+                  <i class="fa fa-location-dot"></i>
+                  New York, United States
+                </span>
+                <h3 class="popular-heading">
+                  <a href="#" class="popular-link"
+                    >Two Hour Walking Tour of Manhattan</a
+                  >
+                </h3>
+                <div class="popular-rate">
+                  <i class="fa fa-star"></i>
+                  <span>5</span>
+                  <span class="popular-reviews">(3 Reviews)</span>
+                </div>
+                <div class="popular-price">
+                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-second">
+                    <i class="fa-solid fa-clock"></i>
+                    10 hours
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="popular-item">
+              <figure class="popular-images">
+                <img
+                  src="./assets/images/tour-1.avif"
+                  alt=""
+                  class="popular-img"
+                />
+                <div class="popular-thumb">
+                  <span class="popular-features">Featured</span>
+                  <i class="fa fa-heart"></i>
+                  <img src="./assets/images/person-1.avif" alt="" />
+                </div>
+              </figure>
+              <div class="popular-content">
+                <span class="popular-title">
+                  <i class="fa fa-location-dot"></i>
+                  New York, United States
+                </span>
+                <h3 class="popular-heading">
+                  <a href="#" class="popular-link"
+                    >Two Hour Walking Tour of Manhattan</a
+                  >
+                </h3>
+                <div class="popular-rate">
+                  <i class="fa fa-star"></i>
+                  <span>5</span>
+                  <span class="popular-reviews">(3 Reviews)</span>
+                </div>
+                <div class="popular-price">
+                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-second">
+                    <i class="fa-solid fa-clock"></i>
+                    10 hours
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="popular-item">
+              <figure class="popular-images">
+                <img
+                  src="./assets/images/tour-1.avif"
+                  alt=""
+                  class="popular-img"
+                />
+                <div class="popular-thumb">
+                  <span class="popular-features">Featured</span>
+                  <i class="fa fa-heart"></i>
+                  <img src="./assets/images/person-1.avif" alt="" />
+                </div>
+              </figure>
+              <div class="popular-content">
+                <span class="popular-title">
+                  <i class="fa fa-location-dot"></i>
+                  New York, United States
+                </span>
+                <h3 class="popular-heading">
+                  <a href="#" class="popular-link"
+                    >Two Hour Walking Tour of Manhattan</a
+                  >
+                </h3>
+                <div class="popular-rate">
+                  <i class="fa fa-star"></i>
+                  <span>5</span>
+                  <span class="popular-reviews">(3 Reviews)</span>
+                </div>
+                <div class="popular-price">
+                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-second">
+                    <i class="fa-solid fa-clock"></i>
+                    10 hours
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+      <section class="stories">
+        <div class="main-content">
+          <div class="section-top">
+            <h2 class="section-top__heading">Stories, tips, and guides</h2>
+            <div class="section-icons">
+              <div class="section-icon">
+                <i class="fa fa-arrow-left"></i>
+              </div>
+              <div class="section-icon">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="stories-body">
+            <section class="stories-cards">
+              <article class="stories-card">
+                <figure class="stories-images">
+                  <img
+                    src="./assets/images/stories-1.avif"
+                    alt=""
+                    class="stories-img"
+                  />
+                </figure>
+                <div class="stories-content">
+                  <h3 class="stories-heading">
+                    <a href="#">
+                      A Seaside Reset in Laguna Beach Neighborhoods
+                    </a>
+                  </h3>
+                  <p class="stories-desc">
+                    From the iconic to the unexpected, the city of San
+                  </p>
+                </div>
+              </article>
+              <article class="stories-card">
+                <figure class="stories-images">
+                  <img
+                    src="./assets/images/stories-1.avif"
+                    alt=""
+                    class="stories-img"
+                  />
+                </figure>
+                <div class="stories-content">
+                  <h3 class="stories-heading">
+                    <a href="#">
+                      A Seaside Reset in Laguna Beach Neighborhoods
+                    </a>
+                  </h3>
+                  <p class="stories-desc">
+                    From the iconic to the unexpected, the city of San
+                  </p>
+                </div>
+              </article>
+              <article class="stories-card">
+                <figure class="stories-images">
+                  <img
+                    src="./assets/images/stories-1.avif"
+                    alt=""
+                    class="stories-img"
+                  />
+                </figure>
+                <div class="stories-content">
+                  <h3 class="stories-heading">
+                    <a href="#">
+                      A Seaside Reset in Laguna Beach Neighborhoods
+                    </a>
+                  </h3>
+                  <p class="stories-desc">
+                    From the iconic to the unexpected, the city of San
+                  </p>
+                </div>
+              </article>
+              <article class="stories-card">
+                <figure class="stories-images">
+                  <img
+                    src="./assets/images/stories-1.avif"
+                    alt=""
+                    class="stories-img"
+                  />
+                </figure>
+                <div class="stories-content">
+                  <h3 class="stories-heading">
+                    <a href="#">
+                      A Seaside Reset in Laguna Beach Neighborhoods
+                    </a>
+                  </h3>
+                  <p class="stories-desc">
+                    From the iconic to the unexpected, the city of San
+                  </p>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="offers">
+        <div class="main-content">
+          <div class="offers-main">
+            <figrue class="offers-images">
+              <img
+                src="./assets/images/img-sub.png"
+                alt=""
+                class="offers-img"
+              />
+            </figrue>
+            <div class="offers-content">
+              <h2 class="offers-content__heading">
+                Get special offers, and more from Traveler
+              </h2>
+              <p class="offers-content__desc">
+                Subscribe to see secret deals prices drop the moment you sign
+                up!
+              </p>
+              <form class="offers-form" autocomplete="off">
+                <div class="offers-form__group">
+                  <input
+                    type="email"
+                    name="email"
+                    class="offers-form__group-input"
+                    placeholder="Email Address"
+                  />
+                  <button class="offers-form__group-btn">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="main-content">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Support</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Help Center</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Our COVID-19 Response</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Cancellation options</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Safety information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Company</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">About us</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Community Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Careers</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Terms of service </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Contact</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Partnerships</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Get in touch</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Social</h3>
+            <ul class="footer-social">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© Copyright Traveler 2023</div>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
