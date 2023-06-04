@@ -75,3 +75,19 @@ li {
   object-fit: cover;
   border-radius: 1rem;
 }
+// Responsive
+@include maxWidth(1023.98px) {
+  .slider {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@include maxWidth(767.98px) {
+  .slider-wrapper {
+    height: 30rem;
+  }
+  .slider-next,
+  .slider-prev {
+    display: none;
+  }
+}

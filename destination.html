@@ -79,99 +79,51 @@
     </header>
     <!-- Header -->
     <main>
-      <section class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.44366148992!2d106.62525347495864!3d10.853821089299728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1685860741864!5m2!1svi!2s"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <section class="path">
+        <div class="main-content">
+          <ul class="path-list">
+            <li class="path-item">
+              <a href="./index.html" class="path-item__link active">Home</a>
+            </li>
+            <li class="path-item">
+              <a href="#" class="path-item__link">Destination</a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="form">
-        <div class="form-body">
-          <div class="form-info">
-            <h2 class="form-info__heading">Contact information</h2>
-            <p class="form-info__desc">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-            <ul class="form-contact">
-              <!-- Link 1 -->
-              <li class="form-contact__item">
-                <a href="#" class="form-contact__link">
-                  <i class="fa fa-location-dot"></i>
-                  <span>FPT Polytechnic College</span>
-                </a>
-              </li>
-              <!-- Link 2 -->
-              <li class="form-contact__item">
-                <a href="tel: +84121231354" class="form-contact__link">
-                  <i class="fa-solid fa-phone"></i>
-                  <span>+84121231354</span>
-                </a>
-              </li>
-              <!-- Link 3 -->
-              <li class="form-contact__item">
-                <a href="mailto: baoDeV@gmail.com" class="form-contact__link">
-                  <i class="fa-solid fa-envelope"></i>
-                  <span>baoDeV@gmail.com</span>
-                </a>
-              </li>
-            </ul>
+      <section class="gallery">
+        <div class="main-content">
+          <div class="section-top">
+            <h2 class="section-top__heading">Destination</h2>
           </div>
-          <form class="form-action" autocomplete="off">
-            <h2 class="form-action__heading">Send a message</h2>
-            <div class="form-wrapper">
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  id="form-input"
-                  required
-                  class="form-input"
-                />
-                <label for="form-input" class="form-label">Your name</label>
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="phone"
-                  id="form-input"
-                  class="form-input"
-                />
-                <label for="form-input" class="form-label">Phone number</label>
-              </div>
+          <div class="gallery-body">
+            <div class="gallery-list">
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-1.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-2.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-3.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-4.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-5.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-6.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-7.avif" alt="" />
+              </figure>
+              <figure class="gallery-image">
+                <img src="./assets/images/travel-8.avif" alt="" />
+              </figure>
             </div>
-            <div class="form-wrapper">
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  id="form-input"
-                  class="form-input"
-                />
-                <label for="form-input" class="form-label">Your email</label>
-              </div>
-            </div>
-            <div class="form-wrapper">
-              <div class="form-group">
-                <textarea
-                  name="textarea"
-                  class="form-area"
-                  id="form-area"
-                  class="form-area"
-                ></textarea>
-                <label for="form-area" class="form-label">Message</label>
-              </div>
-            </div>
-            <button type="submit" class="form-submit">
-              Submit
-              <i class="fa fa-arrow-right"></i>
-            </button>
-          </form>
+          </div>
         </div>
       </section>
     </main>

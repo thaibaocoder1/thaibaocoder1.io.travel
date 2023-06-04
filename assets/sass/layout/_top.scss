@@ -89,12 +89,12 @@
     }
     &-wrapper {
       grid-auto-flow: column;
+      grid-template-columns: unset;
+      grid-auto-columns: 60%;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       scroll-snap-stop: always;
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      @include hideScroll();
     }
     &-item {
       scroll-snap-align: start;

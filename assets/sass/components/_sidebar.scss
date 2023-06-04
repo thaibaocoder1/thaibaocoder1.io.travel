@@ -1,0 +1,127 @@
+.detail-sidebar {
+  width: 35%;
+  position: sticky;
+  top: 0;
+  border: 1px solid #dedede;
+  box-shadow: 0 1px 2px #00000014, 0 4px 12px #0000000d;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 100%;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-booking {
+    margin-top: 2rem;
+    border: 1px solid #dedede;
+    border-radius: 2rem;
+    &__group {
+      padding: 2rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #dedede;
+      }
+    }
+    &__group--person {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__label {
+      display: block;
+      font-size: 1.6rem;
+      color: #232323;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    &__input {
+      display: block;
+      width: 90%;
+      padding: 8px 15px;
+      border: 1px solid #dedede;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      color: #727272;
+      outline: none;
+      font-family: inherit;
+    }
+    &__quantity {
+      display: flex;
+      align-items: center;
+      gap: 0 1.5rem;
+      strong {
+        font-size: 1.6rem;
+      }
+    }
+    &__decrease,
+    &__increase {
+      width: 3.4rem;
+      height: 3.4rem;
+      background: #fff;
+      border: 1px solid #727272;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: #ccc;
+    }
+  }
+  &__footer {
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    p {
+      font-size: 1.8rem;
+      color: #232323;
+      font-weight: bold;
+    }
+    .form__price {
+      flex-direction: column;
+      strong:first-child {
+        color: #b1bac1;
+        text-decoration: line-through;
+      }
+      strong {
+        color: #232323;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+  &__submit {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: $color-hover;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    font-family: inherit;
+  }
+}
+.form__price {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 1.5rem;
+}
+.form__price p {
+  font-size: 1.4rem;
+  color: #727272;
+}
+.form__sale {
+  display: flex;
+  flex-direction: column;
+}
+.form__sale strong {
+  color: #232323;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.form__sale strong:first-child {
+  color: #b1bac1;
+  text-decoration: line-through;
+}

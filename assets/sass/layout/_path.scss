@@ -46,3 +46,29 @@
     }
   }
 }
+.path.path-detail {
+  .path-list {
+    position: relative;
+  }
+  .path-list::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  @include maxWidth(1023.98px) {
+    .path-list::after {
+      left: 17%;
+    }
+  }
+  @include maxWidth(767.98px) {
+    .path-list::after {
+      left: 37%;
+    }
+  }
+}
