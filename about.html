@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="main-content">
+        <div class="navbar">
+          <a href="./index.html" class="navbar__logo">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="Tour"
+              class="navbar__img"
+            />
+          </a>
+          <nav class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-item__link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./about.html" class="navbar-item__link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./tour.html" class="navbar-item__link">Tour</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link" id="page">Pages</a>
+              <ul class="subnav">
+                <li class="subnav-item">
+                  <a href="#" class="subnav-item__link">Blog</a>
+                </li>
+                <li class="subnav-item">
+                  <a href="#" class="subnav-item__link">Destination</a>
+                </li>
+              </ul>
+            </li>
+            <ul class="subnav-mobile">
+              <li class="subnav-item">
+                <a href="#" class="subnav-item__link">Blog</a>
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-item__link">Destination</a>
+              </li>
+            </ul>
+            <li class="navbar-item">
+              <a href="./about.html" class="navbar-item__link">Contact</a>
+            </li>
+          </nav>
+          <div class="navbar-menu">
+            <i class="fa-solid fa-bars navbar-menu__icon"></i>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+    <main>
+      <section class="about">
+        <div class="about-top">
+          <div class="about-banner">
+            <div class="about-play">
+              <i class="fa fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="about-content">
+            <!-- Group 1 -->
+            <div class="about-group">
+              <h2 class="about-group__heading">About the company</h2>
+              <p class="about-group__desc">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                cons, adipisci velit, sed quia non numquam eius modi ullma
+                tempora incidunt ut labore et dolore magnam aliquam quaerat
+                fruitr voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem. Itaque earum rerum hic tea sapiente delectus, ut
+                aut reiciendis voluptatibus.
+              </p>
+            </div>
+            <div class="about-row">
+              <!-- Group 2 -->
+              <div class="about-group">
+                <h2 class="about-group__heading about-group__heading--small">
+                  Our mission
+                </h2>
+                <p class="about-group__desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Quis nostrud kemmith
+                  exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+              <!-- Group 3 -->
+              <div class="about-group">
+                <h2 class="about-group__heading about-group__heading--small">
+                  Our mission
+                </h2>
+                <p class="about-group__desc">
+                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum. Sed
+                  ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium minima veniam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="main-content">
+          <div class="section-top">
+            <h2 class="section-top__heading">What out clients say</h2>
+            <div class="section-icons">
+              <div class="section-icon">
+                <i class="fa fa-arrow-left"></i>
+              </div>
+              <div class="section-icon">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="clients-body">
+            <section class="clients-list">
+              <!-- Item 1 -->
+              <article class="clients-item">
+                <div class="clients-content">
+                  <p class="clients-content__desc">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Massa amet condimentum in pretium. Montes tristique amet
+                    pellentesque ut fames condimentum.”
+                  </p>
+                  <div class="clients-stars">
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                  </div>
+                  <h3 class="clients-content__author">Darlene Robertson</h3>
+                  <span class="clients-content__place">Customers in U.S.A</span>
+                </div>
+              </article>
+              <!-- Item 2 -->
+              <article class="clients-item">
+                <div class="clients-content">
+                  <p class="clients-content__desc">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Massa amet condimentum in pretium. Montes tristique amet
+                    pellentesque ut fames condimentum.”
+                  </p>
+                  <div class="clients-stars">
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                  </div>
+                  <h3 class="clients-content__author">Darlene Robertson</h3>
+                  <span class="clients-content__place">Customers in U.S.A</span>
+                </div>
+              </article>
+              <!-- Item 1 -->
+              <article class="clients-item">
+                <div class="clients-content">
+                  <p class="clients-content__desc">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Massa amet condimentum in pretium. Montes tristique amet
+                    pellentesque ut fames condimentum.”
+                  </p>
+                  <div class="clients-stars">
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                  </div>
+                  <h3 class="clients-content__author">Darlene Robertson</h3>
+                  <span class="clients-content__place">Customers in U.S.A</span>
+                </div>
+              </article>
+            </section>
+            <ul class="clients-dots">
+              <li class="clients-dot active"></li>
+              <li class="clients-dot"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="members">
+        <div class="main-content">
+          <div class="section-top">
+            <h2 class="section-top__heading">Meet our team</h2>
+          </div>
+          <div class="members-list">
+            <!-- Item 1 -->
+            <div class="members-item">
+              <figure class="members-thumb">
+                <img
+                  src="./assets/images/ceo-1.avif"
+                  alt=""
+                  class="members-thumb__img"
+                />
+              </figure>
+              <div class="members-content">
+                <h3 class="members-content__author">Darlene Robertsons</h3>
+                <p class="members-content__career">Founder & CEO</p>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="members-item">
+              <figure class="members-thumb">
+                <img
+                  src="./assets/images/ceo-2.avif"
+                  alt=""
+                  class="members-thumb__img"
+                />
+              </figure>
+              <div class="members-content">
+                <h3 class="members-content__author">Darlene Robertsons</h3>
+                <p class="members-content__career">Founder & CEO</p>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="members-item">
+              <figure class="members-thumb">
+                <img
+                  src="./assets/images/ceo-3.avif"
+                  alt=""
+                  class="members-thumb__img"
+                />
+              </figure>
+              <div class="members-content">
+                <h3 class="members-content__author">Darlene Robertsons</h3>
+                <p class="members-content__career">Founder & CEO</p>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="members-item">
+              <figure class="members-thumb">
+                <img
+                  src="./assets/images/ceo-4.avif"
+                  alt=""
+                  class="members-thumb__img"
+                />
+              </figure>
+              <div class="members-content">
+                <h3 class="members-content__author">Darlene Robertsons</h3>
+                <p class="members-content__career">Founder & CEO</p>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="members-item">
+              <figure class="members-thumb">
+                <img
+                  src="./assets/images/ceo-5.avif"
+                  alt=""
+                  class="members-thumb__img"
+                />
+              </figure>
+              <div class="members-content">
+                <h3 class="members-content__author">Darlene Robertsons</h3>
+                <p class="members-content__career">Founder & CEO</p>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="members-item">
+              <figure class="members-thumb">
+                <img
+                  src="./assets/images/ceo-6.avif"
+                  alt=""
+                  class="members-thumb__img"
+                />
+              </figure>
+              <div class="members-content">
+                <h3 class="members-content__author">Darlene Robertsons</h3>
+                <p class="members-content__career">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="main-content">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Support</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Help Center</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Our COVID-19 Response</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Cancellation options</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Safety information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Company</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">About us</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Community Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Careers</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Terms of service </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Contact</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Partnerships</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Get in touch</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Social</h3>
+            <ul class="footer-social">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© Copyright Traveler 2023</div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

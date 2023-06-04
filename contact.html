@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="main-content">
+        <div class="navbar">
+          <a href="./index.html" class="navbar__logo">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="Tour"
+              class="navbar__img"
+            />
+          </a>
+          <nav class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-item__link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./about.html" class="navbar-item__link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./tour.html" class="navbar-item__link">Tour</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link" id="page">Pages</a>
+              <ul class="subnav">
+                <li class="subnav-item">
+                  <a href="#" class="subnav-item__link">Blog</a>
+                </li>
+                <li class="subnav-item">
+                  <a href="#" class="subnav-item__link">Destination</a>
+                </li>
+              </ul>
+            </li>
+            <ul class="subnav-mobile">
+              <li class="subnav-item">
+                <a href="#" class="subnav-item__link">Blog</a>
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-item__link">Destination</a>
+              </li>
+            </ul>
+            <li class="navbar-item">
+              <a href="./contact.html" class="navbar-item__link">Contact</a>
+            </li>
+          </nav>
+          <div class="navbar-menu">
+            <i class="fa-solid fa-bars navbar-menu__icon"></i>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+    <main>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.44366148992!2d106.62525347495864!3d10.853821089299728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1685860741864!5m2!1svi!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="form">
+        <div class="form-body">
+          <div class="form-info">
+            <h2 class="form-info__heading">Contact information</h2>
+            <p class="form-info__desc">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+            <ul class="form-contact">
+              <!-- Link 1 -->
+              <li class="form-contact__item">
+                <a href="#" class="form-contact__link">
+                  <i class="fa fa-location-dot"></i>
+                  <span>FPT Polytechnic College</span>
+                </a>
+              </li>
+              <!-- Link 2 -->
+              <li class="form-contact__item">
+                <a href="tel: +84121231354" class="form-contact__link">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+84121231354</span>
+                </a>
+              </li>
+              <!-- Link 3 -->
+              <li class="form-contact__item">
+                <a href="mailto: baoDeV@gmail.com" class="form-contact__link">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>baoDeV@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-action" autocomplete="off">
+            <h2 class="form-action__heading">Send a message</h2>
+            <div class="form-wrapper">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="form-input"
+                  required
+                  class="form-input"
+                />
+                <label for="form-input" class="form-label">Your name</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  id="form-input"
+                  class="form-input"
+                />
+                <label for="form-input" class="form-label">Phone number</label>
+              </div>
+            </div>
+            <div class="form-wrapper">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="form-input"
+                  class="form-input"
+                />
+                <label for="form-input" class="form-label">Your email</label>
+              </div>
+            </div>
+            <div class="form-wrapper">
+              <div class="form-group">
+                <textarea
+                  name="textarea"
+                  class="form-area"
+                  id="form-area"
+                  class="form-area"
+                ></textarea>
+                <label for="form-area" class="form-label">Message</label>
+              </div>
+            </div>
+            <button type="submit" class="form-submit">
+              Submit
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="main-content">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Support</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Help Center</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Our COVID-19 Response</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Cancellation options</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Safety information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Company</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">About us</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Community Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Careers</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Terms of service </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Contact</h3>
+            <ul class="foooter-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Partnerships</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Get in touch</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col__heading">Social</h3>
+            <ul class="footer-social">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© Copyright Traveler 2023</div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

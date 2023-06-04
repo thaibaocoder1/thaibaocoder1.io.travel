@@ -18,8 +18,9 @@ window.addEventListener("load", function () {
 // Display submenu
 window.addEventListener("load", function () {
   const elPage = document.getElementById("page");
-  const subnavMenu = this.document.querySelector(".subnav-mobile");
+  const subnavMenu = document.querySelector(".subnav-mobile");
   elPage.addEventListener("click", function () {
     subnavMenu.classList.toggle("is-actived");
   });
 });
+// Slider

@@ -12,9 +12,22 @@
 @import "./layout/popular";
 @import "./layout/stories";
 @import "./layout/offers";
+@import "./layout/about";
+@import "./layout/clients";
+@import "./layout/members";
+@import "./layout/path";
+@import "./layout/tour";
+@import "./layout/map";
+@import "./layout/form";
+@import "./layout/details";
 @import "./layout/footer";
 
 @import "./components/button";
 @import "./components/heading";
+@import "./components/form";
+@import "./components/slider";
 
 @import "./pages/home";
+@import "./pages/about";
+@import "./pages/tour";
+@import "./pages/contact";

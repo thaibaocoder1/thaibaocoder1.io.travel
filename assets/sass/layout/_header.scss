@@ -40,6 +40,7 @@
       transition: 0.25s all linear;
       opacity: 0;
       visibility: visible;
+      z-index: 10;
       &-item__link {
         display: block;
         width: 100%;
@@ -120,13 +121,6 @@
         text-transform: uppercase;
       }
     }
-  }
-  @include maxWidth(767.98px) {
-    .navbar {
-      &-list {
-        width: 26rem;
-      }
-    }
     .subnav {
       display: none;
     }
@@ -142,6 +136,13 @@
     .subnav-mobile .subnav-item__link {
       border-bottom: 1px solid #ccc;
       font-weight: 500;
+    }
+  }
+  @include maxWidth(767.98px) {
+    .navbar {
+      &-list {
+        width: 26rem;
+      }
     }
   }
 }
