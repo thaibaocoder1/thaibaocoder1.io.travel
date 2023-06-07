@@ -35,39 +35,39 @@
           </a>
           <nav class="navbar-list">
             <li class="navbar-item">
-              <a href="./index.html" class="navbar-item__link">Home</a>
+              <a href="./index.html" class="navbar-item__link">Trang chủ</a>
             </li>
             <li class="navbar-item">
-              <a href="./about.html" class="navbar-item__link">About</a>
+              <a href="./about.html" class="navbar-item__link">Khác</a>
             </li>
             <li class="navbar-item">
-              <a href="./tour.html" class="navbar-item__link">Tour</a>
+              <a href="./tour.html" class="navbar-item__link">Du lịch</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-item__link" id="page">Pages</a>
+              <a href="#" class="navbar-item__link" id="page">Trang</a>
               <ul class="subnav">
                 <li class="subnav-item">
-                  <a href="./blog.html" class="subnav-item__link">Blog</a>
+                  <a href="./blog.html" class="subnav-item__link">Bài viết</a>
                 </li>
                 <li class="subnav-item">
                   <a href="./destination.html" class="subnav-item__link"
-                    >Destination</a
+                    >Điểm đến</a
                   >
                 </li>
               </ul>
             </li>
             <ul class="subnav-mobile">
               <li class="subnav-item">
-                <a href="./blog.html" class="subnav-item__link">Blog</a>
+                <a href="./blog.html" class="subnav-item__link">Bài viết</a>
               </li>
               <li class="subnav-item">
                 <a href="./destination.html" class="subnav-item__link"
-                  >Destination</a
+                  >Điểm đến</a
                 >
               </li>
             </ul>
             <li class="navbar-item">
-              <a href="./contact.html" class="navbar-item__link">Contact</a>
+              <a href="./contact.html" class="navbar-item__link">Liên hệ</a>
             </li>
           </nav>
           <div class="navbar-menu">
@@ -80,21 +80,61 @@
     <!-- Header -->
     <main>
       <section class="hero">
-        <div class="main-content">
+        <!-- Slider hero -->
+        <section id="gallery-carousel">
+          <!-- Button Left -->
+          <button class="btn btn-left hidden">
+            <i class="fas fa-caret-left"></i>
+          </button>
+          <!-- Image Container -->
+          <div class="img-container">
+            <ul class="list">
+              <li class="item current-img">
+                <img src="./assets/images/banner.png" alt="nature" />
+              </li>
+
+              <li class="item">
+                <img
+                  src="https://images.unsplash.com/photo-1683009680116-b5c04463551d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="nature"
+                />
+              </li>
+
+              <li class="item">
+                <img
+                  src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1121&q=80"
+                  alt="nature"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="nature"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- Button Right -->
+          <button class="btn btn-right">
+            <i class="fas fa-caret-right"></i>
+          </button>
+        </section>
+        <!-- Slider hero -->
+        <div class="main-content main-content--hero">
           <div class="hero-wrapper">
             <div class="hero-content">
-              <h1 class="hero-content__heading">Your world of joy</h1>
+              <h1 class="hero-content__heading">Thế giới niềm vui của bạn</h1>
               <p class="hero-conent__desc">
-                Find what makes you happy anytime, anywhere
+                Tìm những gì làm cho bạn hạnh phúc mọi lúc, mọi nơi
               </p>
               <div class="hero-search">
                 <div class="destination-search">
                   <div class="destination-item">
                     <i class="fa-solid fa-location-dot destination-icon"></i>
                     <div class="detination-info">
-                      <p class="destination-title">Location</p>
+                      <p class="destination-title">Điểm đến</p>
                       <p class="destination-ques">
-                        Where are you going?
+                        Bạn dự định đi đâu?
                         <i class="fa fa-caret-down"></i>
                       </p>
                     </div>
@@ -103,19 +143,19 @@
                     <div class="destination-item">
                       <i class="fa-solid fa-calendar-days"></i>
                       <div class="detination-info">
-                        <p class="destination-title">Date</p>
+                        <p class="destination-title">Ngày</p>
                         <span class="destination-date">25/05/2023</span>
                       </div>
                     </div>
                     <div class="destination-item">
                       <i class="fa-solid fa-calendar-days"></i>
                       <div class="detination-info">
-                        <p class="destination-title">Check out</p>
+                        <p class="destination-title">Thanh toán</p>
                         <span class="destination-date">26/05/2023</span>
                       </div>
                     </div>
                   </div>
-                  <button class="hero-btn">Search</button>
+                  <button class="hero-btn">Tìm kiếm</button>
                 </div>
               </div>
             </div>
@@ -125,7 +165,7 @@
       <section class="top">
         <div class="main-content">
           <div class="top-tour">
-            <h2 class="top-tour__heading">Top Destinations</h2>
+            <h2 class="top-tour__heading">Điểm Đến Nổi Tiếng</h2>
             <ul class="top-images">
               <i class="fa fa-arrow-left top-prev"></i>
               <div class="top-wrapper">
@@ -136,51 +176,51 @@
                     </a>
                   </div>
                   <div class="top-content">
-                    <a href="#" class="top-view">California</a>
+                    <a href="#" class="top-view">Vịnh Hạ Long</a>
                     <p class="top-quantity">17 Tour</p>
                   </div>
                 </div>
                 <div class="top-wrapper__item">
                   <div class="top-item">
                     <a href="#" class="top-link">
-                      <img src="./assets/images/destination-1.avif" alt="" />
+                      <img src="./assets/images/destination-2.avif" alt="" />
                     </a>
                   </div>
                   <div class="top-content">
-                    <a href="#" class="top-view">California</a>
+                    <a href="#" class="top-view">Tràng An</a>
                     <p class="top-quantity">17 Tour</p>
                   </div>
                 </div>
                 <div class="top-wrapper__item">
                   <div class="top-item">
                     <a href="#" class="top-link">
-                      <img src="./assets/images/destination-1.avif" alt="" />
+                      <img src="./assets/images/destination-3.avif" alt="" />
                     </a>
                   </div>
                   <div class="top-content">
-                    <a href="#" class="top-view">California</a>
+                    <a href="#" class="top-view">Phú Quốc</a>
+                    <p class="top-quantity">15 Tour</p>
+                  </div>
+                </div>
+                <div class="top-wrapper__item">
+                  <div class="top-item">
+                    <a href="#" class="top-link">
+                      <img src="./assets/images/destination-4.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="top-content">
+                    <a href="#" class="top-view">Nha Trang</a>
                     <p class="top-quantity">17 Tour</p>
                   </div>
                 </div>
                 <div class="top-wrapper__item">
                   <div class="top-item">
                     <a href="#" class="top-link">
-                      <img src="./assets/images/destination-1.avif" alt="" />
+                      <img src="./assets/images/destination-5.avif" alt="" />
                     </a>
                   </div>
                   <div class="top-content">
-                    <a href="#" class="top-view">California</a>
-                    <p class="top-quantity">17 Tour</p>
-                  </div>
-                </div>
-                <div class="top-wrapper__item">
-                  <div class="top-item">
-                    <a href="#" class="top-link">
-                      <img src="./assets/images/destination-1.avif" alt="" />
-                    </a>
-                  </div>
-                  <div class="top-content">
-                    <a href="#" class="top-view">California</a>
+                    <a href="#" class="top-view">Đà Nẵng</a>
                     <p class="top-quantity">17 Tour</p>
                   </div>
                 </div>
@@ -193,7 +233,7 @@
       <section class="popular">
         <div class="main-content">
           <div class="section-top">
-            <h2 class="section-top__heading">Recommended for you</h2>
+            <h2 class="section-top__heading">Đề xuất cho bạn</h2>
             <div class="section-icons">
               <div class="section-icon">
                 <i class="fa fa-arrow-left"></i>
@@ -212,7 +252,7 @@
                   class="popular-img"
                 />
                 <div class="popular-thumb">
-                  <span class="popular-features">Featured</span>
+                  <span class="popular-features">Nổi bật</span>
                   <i class="fa fa-heart"></i>
                   <img src="./assets/images/person-1.avif" alt="" />
                 </div>
@@ -220,23 +260,23 @@
               <div class="popular-content">
                 <span class="popular-title">
                   <i class="fa fa-location-dot"></i>
-                  New York, United States
+                  Việt Nam, Hồ Chí Minh
                 </span>
                 <h3 class="popular-heading">
                   <a href="#" class="popular-link"
-                    >Two Hour Walking Tour of Manhattan</a
+                    >Tour đi bộ hai giờ ở Manhattan</a
                   >
                 </h3>
                 <div class="popular-rate">
                   <i class="fa fa-star"></i>
                   <span>5</span>
-                  <span class="popular-reviews">(3 Reviews)</span>
+                  <span class="popular-reviews">(3 đánh giá)</span>
                 </div>
                 <div class="popular-price">
-                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-first">Từ <strong>€100,00</strong></p>
                   <p class="popular-second">
                     <i class="fa-solid fa-clock"></i>
-                    10 hours
+                    10 giờ
                   </p>
                 </div>
               </div>
@@ -244,12 +284,12 @@
             <article class="popular-item">
               <figure class="popular-images">
                 <img
-                  src="./assets/images/tour-1.avif"
+                  src="./assets/images/tour-2.avif"
                   alt=""
                   class="popular-img"
                 />
                 <div class="popular-thumb">
-                  <span class="popular-features">Featured</span>
+                  <span class="popular-features">Nổi bật</span>
                   <i class="fa fa-heart"></i>
                   <img src="./assets/images/person-1.avif" alt="" />
                 </div>
@@ -257,23 +297,23 @@
               <div class="popular-content">
                 <span class="popular-title">
                   <i class="fa fa-location-dot"></i>
-                  New York, United States
+                  Việt Nam, Hồ Chí Minh
                 </span>
                 <h3 class="popular-heading">
                   <a href="#" class="popular-link"
-                    >Two Hour Walking Tour of Manhattan</a
+                    >Tour đi bộ hai giờ ở Manhattan</a
                   >
                 </h3>
                 <div class="popular-rate">
                   <i class="fa fa-star"></i>
                   <span>5</span>
-                  <span class="popular-reviews">(3 Reviews)</span>
+                  <span class="popular-reviews">(3 đánh giá)</span>
                 </div>
                 <div class="popular-price">
-                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-first">Từ <strong>€100,00</strong></p>
                   <p class="popular-second">
                     <i class="fa-solid fa-clock"></i>
-                    10 hours
+                    10 giờ
                   </p>
                 </div>
               </div>
@@ -281,12 +321,12 @@
             <article class="popular-item">
               <figure class="popular-images">
                 <img
-                  src="./assets/images/tour-1.avif"
+                  src="./assets/images/tour-3.avif"
                   alt=""
                   class="popular-img"
                 />
                 <div class="popular-thumb">
-                  <span class="popular-features">Featured</span>
+                  <span class="popular-features">Nổi bật</span>
                   <i class="fa fa-heart"></i>
                   <img src="./assets/images/person-1.avif" alt="" />
                 </div>
@@ -294,23 +334,23 @@
               <div class="popular-content">
                 <span class="popular-title">
                   <i class="fa fa-location-dot"></i>
-                  New York, United States
+                  Việt Nam, Hồ Chí Minh
                 </span>
                 <h3 class="popular-heading">
                   <a href="#" class="popular-link"
-                    >Two Hour Walking Tour of Manhattan</a
+                    >Tour đi bộ hai giờ ở Manhattan</a
                   >
                 </h3>
                 <div class="popular-rate">
                   <i class="fa fa-star"></i>
                   <span>5</span>
-                  <span class="popular-reviews">(3 Reviews)</span>
+                  <span class="popular-reviews">(3 đánh giá)</span>
                 </div>
                 <div class="popular-price">
-                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-first">Từ <strong>€100,00</strong></p>
                   <p class="popular-second">
                     <i class="fa-solid fa-clock"></i>
-                    10 hours
+                    10 giờ
                   </p>
                 </div>
               </div>
@@ -318,12 +358,12 @@
             <article class="popular-item">
               <figure class="popular-images">
                 <img
-                  src="./assets/images/tour-1.avif"
+                  src="./assets/images/tour-4.avif"
                   alt=""
                   class="popular-img"
                 />
                 <div class="popular-thumb">
-                  <span class="popular-features">Featured</span>
+                  <span class="popular-features">Nổi bật</span>
                   <i class="fa fa-heart"></i>
                   <img src="./assets/images/person-1.avif" alt="" />
                 </div>
@@ -331,23 +371,23 @@
               <div class="popular-content">
                 <span class="popular-title">
                   <i class="fa fa-location-dot"></i>
-                  New York, United States
+                  Việt Nam, Hồ Chí Minh
                 </span>
                 <h3 class="popular-heading">
                   <a href="#" class="popular-link"
-                    >Two Hour Walking Tour of Manhattan</a
+                    >Tour đi bộ hai giờ ở Manhattan</a
                   >
                 </h3>
                 <div class="popular-rate">
                   <i class="fa fa-star"></i>
                   <span>5</span>
-                  <span class="popular-reviews">(3 Reviews)</span>
+                  <span class="popular-reviews">(3 đánh giá)</span>
                 </div>
                 <div class="popular-price">
-                  <p class="popular-first">From <strong>€100,00</strong></p>
+                  <p class="popular-first">Từ <strong>€100,00</strong></p>
                   <p class="popular-second">
                     <i class="fa-solid fa-clock"></i>
-                    10 hours
+                    10 giờ
                   </p>
                 </div>
               </div>
@@ -358,7 +398,7 @@
       <section class="stories">
         <div class="main-content">
           <div class="section-top">
-            <h2 class="section-top__heading">Stories, tips, and guides</h2>
+            <h2 class="section-top__heading">Câu chuyện, mẹo và hướng dẫn</h2>
             <div class="section-icons">
               <div class="section-icon">
                 <i class="fa fa-arrow-left"></i>
@@ -381,11 +421,30 @@
                 <div class="stories-content">
                   <h3 class="stories-heading">
                     <a href="#">
-                      A Seaside Reset in Laguna Beach Neighborhoods
+                      Thiết lập lại bên bờ biển ở các vùng lân cận Laguna Beach
                     </a>
                   </h3>
                   <p class="stories-desc">
-                    From the iconic to the unexpected, the city of San
+                    Từ biểu tượng đến bất ngờ, thành phố Đà Nẵng
+                  </p>
+                </div>
+              </article>
+              <article class="stories-card">
+                <figure class="stories-images">
+                  <img
+                    src="./assets/images/stories-2.avif"
+                    alt=""
+                    class="stories-img"
+                  />
+                </figure>
+                <div class="stories-content">
+                  <h3 class="stories-heading">
+                    <a href="#">
+                      Thiết lập lại bên bờ biển ở các vùng lân cận Laguna Beach
+                    </a>
+                  </h3>
+                  <p class="stories-desc">
+                    Từ biểu tượng đến bất ngờ, thành phố Đà Nẵng
                   </p>
                 </div>
               </article>
@@ -400,18 +459,18 @@
                 <div class="stories-content">
                   <h3 class="stories-heading">
                     <a href="#">
-                      A Seaside Reset in Laguna Beach Neighborhoods
+                      Thiết lập lại bên bờ biển ở các vùng lân cận Laguna Beach
                     </a>
                   </h3>
                   <p class="stories-desc">
-                    From the iconic to the unexpected, the city of San
+                    Từ biểu tượng đến bất ngờ, thành phố Đà Nẵng
                   </p>
                 </div>
               </article>
               <article class="stories-card">
                 <figure class="stories-images">
                   <img
-                    src="./assets/images/stories-1.avif"
+                    src="./assets/images/stories-2.avif"
                     alt=""
                     class="stories-img"
                   />
@@ -419,30 +478,11 @@
                 <div class="stories-content">
                   <h3 class="stories-heading">
                     <a href="#">
-                      A Seaside Reset in Laguna Beach Neighborhoods
+                      Thiết lập lại bên bờ biển ở các vùng lân cận Laguna Beach
                     </a>
                   </h3>
                   <p class="stories-desc">
-                    From the iconic to the unexpected, the city of San
-                  </p>
-                </div>
-              </article>
-              <article class="stories-card">
-                <figure class="stories-images">
-                  <img
-                    src="./assets/images/stories-1.avif"
-                    alt=""
-                    class="stories-img"
-                  />
-                </figure>
-                <div class="stories-content">
-                  <h3 class="stories-heading">
-                    <a href="#">
-                      A Seaside Reset in Laguna Beach Neighborhoods
-                    </a>
-                  </h3>
-                  <p class="stories-desc">
-                    From the iconic to the unexpected, the city of San
+                    Từ biểu tượng đến bất ngờ, thành phố Đà Nẵng
                   </p>
                 </div>
               </article>
@@ -462,11 +502,10 @@
             </figrue>
             <div class="offers-content">
               <h2 class="offers-content__heading">
-                Get special offers, and more from Traveler
+                Nhận ưu đãi đặc biệt và hơn thế nữa từ Traveler
               </h2>
               <p class="offers-content__desc">
-                Subscribe to see secret deals prices drop the moment you sign
-                up!
+                Đăng ký để xem các ưu đãi bí mật giảm giá ngay khi bạn đăng ký!
               </p>
               <form class="offers-form" autocomplete="off">
                 <div class="offers-form__group">
@@ -474,12 +513,93 @@
                     type="email"
                     name="email"
                     class="offers-form__group-input"
-                    placeholder="Email Address"
+                    placeholder="Địa chỉ email"
                   />
-                  <button class="offers-form__group-btn">Subscribe</button>
+                  <button class="offers-form__group-btn">Đăng ký</button>
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="grid">
+        <div class="main-content">
+          <div class="section-top">
+            <h2 class="section-top__heading">Hình ảnh nổi bật</h2>
+          </div>
+          <div class="grid-layout">
+            <figure class="grid-item">
+              <img src="./assets/images/grid-1.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-2.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-3.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-4.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-5.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-6.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-7.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
+            <figure class="grid-item">
+              <img src="./assets/images/grid-8.avif" alt="" class="grid-img" />
+              <div class="grid-modal">
+                <h3 class="grid-title">
+                  Khám phá những tour du lịch mới ngay!
+                  <i class="fa fa-arrow-right"></i>
+                </h3>
+              </div>
+            </figure>
           </div>
         </div>
       </section>
@@ -489,7 +609,7 @@
       <div class="main-content">
         <div class="footer-row">
           <div class="footer-col">
-            <h3 class="footer-col__heading">Support</h3>
+            <h3 class="footer-col__heading">Hỗ trợ</h3>
             <ul class="foooter-list">
               <li class="footer-item">
                 <a href="#" class="footer-link">Help Center</a>
@@ -506,7 +626,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h3 class="footer-col__heading">Company</h3>
+            <h3 class="footer-col__heading">Công ty</h3>
             <ul class="foooter-list">
               <li class="footer-item">
                 <a href="#" class="footer-link">About us</a>
@@ -526,7 +646,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h3 class="footer-col__heading">Contact</h3>
+            <h3 class="footer-col__heading">Liên hệ</h3>
             <ul class="foooter-list">
               <li class="footer-item">
                 <a href="#" class="footer-link">Partnerships</a>
@@ -540,7 +660,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h3 class="footer-col__heading">Social</h3>
+            <h3 class="footer-col__heading">Mạng xã hội</h3>
             <ul class="footer-social">
               <li class="footer-social__item">
                 <a href="#" class="footer-social__link">

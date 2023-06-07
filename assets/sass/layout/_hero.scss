@@ -1,6 +1,5 @@
 .hero {
-  background: url("../../../assets/images/banner.png") no-repeat center / cover;
-  padding: 13rem 0;
+  height: 46rem;
   &-content {
     text-align: center;
   }
@@ -40,6 +39,12 @@
     margin-bottom: 0.5rem;
     font-weight: 500;
   }
+  .main-content.main-content--hero {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
   .destination-wrapper {
     display: flex;
     gap: 0 12rem;
@@ -75,6 +80,9 @@
     }
   }
   @include maxWidth(767.98px) {
+    .main-content.main-content--hero {
+      top: 70%;
+    }
     &-btn {
       width: 100%;
       border-radius: 0 0 2rem 2rem;

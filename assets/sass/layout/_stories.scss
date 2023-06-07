@@ -28,6 +28,7 @@
     object-fit: contain;
     transition: all 0.3s ease-in-out;
     border-radius: 2rem 2rem 0 0;
+    cursor: pointer;
     &:hover {
       transform: scale(1.1);
     }

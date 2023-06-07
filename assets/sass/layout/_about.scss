@@ -67,6 +67,7 @@
   }
   // Responsive
   @include maxWidth(1023.98px) {
+    padding: 1rem;
     &-content {
       margin-top: 3rem;
     }

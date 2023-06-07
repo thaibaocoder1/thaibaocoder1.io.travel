@@ -224,11 +224,39 @@
   }
   &-tag--categories-blue {
     background-color: rgba(0, 38, 171, 0.06);
-    color: #0026ab;
+    p {
+      color: rgba(0, 38, 171, 1);
+    }
+    p:before {
+      background-color: rgba(0, 38, 171, 1);
+    }
   }
   &-tag--categories-orange {
     background-color: rgba(168, 89, 0, 0.06);
-    color: rgba(168, 89, 0, 1);
+    p {
+      color: rgba(168, 89, 0, 1);
+    }
+    p:before {
+      background-color: rgba(168, 89, 0, 1);
+    }
+  }
+  &-tag--categories-green {
+    background-color: rgba(1, 115, 44, 0.06);
+    p {
+      color: rgba(1, 115, 44, 1);
+    }
+    p:before {
+      background-color: rgba(1, 115, 44, 1);
+    }
+  }
+  &-tag--categories-last {
+    background-color: #0000000f;
+    p {
+      color: rgba(0, 0, 0, 1);
+    }
+    p:before {
+      background-color: rgba(0, 0, 0, 1);
+    }
   }
   &-list-tag {
     display: flex;
