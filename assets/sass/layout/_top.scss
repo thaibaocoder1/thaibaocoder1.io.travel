@@ -80,6 +80,7 @@
   }
   // Responsive
   @include maxWidth(1023.98px) {
+    margin-top: 8rem;
     &-tour__heading {
       font-size: 3.2rem;
     }
@@ -100,7 +101,6 @@
     }
   }
   @include maxWidth(767.98px) {
-    margin-top: 8rem;
     padding: 5rem 0;
   }
 }

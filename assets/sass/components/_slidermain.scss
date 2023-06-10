@@ -1,17 +1,20 @@
 .hero {
+  .box-test {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
   #gallery-carousel {
     .list {
       position: relative;
-      width: 100%;
       transition: transform 0.5s ease-in-out;
     }
     .item {
       position: absolute;
-      width: 100%;
-      height: 60vh;
-      width: inherit;
       left: 0;
       top: 0;
+      width: 100%;
+      height: 100%;
     }
     .item img {
       width: 100vw;
@@ -46,13 +49,6 @@
     /* Dynamic Class */
     .hidden {
       display: none;
-    }
-  }
-  @include maxWidth(767.98px) {
-    #gallery-carousel {
-      .item img {
-        height: 70%;
-      }
     }
   }
 }

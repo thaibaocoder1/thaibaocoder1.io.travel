@@ -82,23 +82,29 @@
   }
   // Responsive
   @include maxWidth(1023.98px) {
+    &-body {
+      padding: 1rem;
+    }
     &-action {
       width: 100%;
     }
   }
   @include maxWidth(767.98px) {
     &-action {
-      width: 90%;
+      width: 100%;
     }
     &-area,
     &-input {
-      width: 90%;
+      width: 100%;
     }
     &-label {
       font-size: 1.4rem;
     }
     &-submit {
       width: 100%;
+    }
+    &-action {
+      padding: 2rem;
     }
   }
 }

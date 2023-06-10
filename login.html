@@ -82,49 +82,75 @@
     </header>
     <!-- Header -->
     <main>
-      <section class="path">
+      <section class="login">
         <div class="main-content">
-          <ul class="path-list">
-            <li class="path-item">
-              <a href="./index.html" class="path-item__link active">Home</a>
-            </li>
-            <li class="path-item">
-              <a href="#" class="path-item__link">Destination</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="main-content">
-          <div class="section-top">
-            <h2 class="section-top__heading">Điểm đến</h2>
-          </div>
-          <div class="gallery-body">
-            <div class="gallery-list">
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-1.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-2.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-3.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-4.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-5.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-6.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-7.avif" alt="" />
-              </figure>
-              <figure class="gallery-image">
-                <img src="./assets/images/travel-8.avif" alt="" />
-              </figure>
+          <div class="login-body">
+            <figure class="login-thumb">
+              <img
+                src="./assets/images/login-thumb.avif"
+                alt=""
+                class="login-thumb__img"
+              />
+              <img
+                src="./assets/images/login-thumb-2.avif"
+                alt=""
+                class="login-thumb__img login-thumb__img--last"
+              />
+            </figure>
+            <div class="login-block">
+              <h2 class="login-block__heading">Đăng nhập</h2>
+              <form autocomplete="off" class="login-form">
+                <div class="login-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="login-input"
+                    class="login-input"
+                    placeholder=" "
+                  />
+                  <label for="login-input" class="login-label">Họ và tên</label>
+                </div>
+                <div class="login-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="login-input"
+                    class="login-input"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="login-input" class="login-label"
+                    >Địa chỉ email</label
+                  >
+                </div>
+                <div class="login-group">
+                  <input
+                    type="password"
+                    name="password"
+                    id="login-input"
+                    class="login-input"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="login-input" class="login-label"
+                    >Nhập mật khẩu</label
+                  >
+                </div>
+                <div class="login-group">
+                  <input
+                    type="password"
+                    name="password"
+                    id="login-input"
+                    class="login-input"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="login-input" class="login-label"
+                    >Nhập lại mật khẩu</label
+                  >
+                </div>
+                <button type="submit" class="login-submit">Đăng Nhập</button>
+              </form>
             </div>
           </div>
         </div>

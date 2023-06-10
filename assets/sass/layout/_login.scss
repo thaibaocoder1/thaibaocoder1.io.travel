@@ -1,0 +1,139 @@
+.login {
+  padding: 5rem 0;
+  background-color: #f7f8fa;
+  &-body {
+    display: flex;
+    align-items: center;
+  }
+  &-thumb,
+  &-block {
+    width: calc(50% - 2rem);
+  }
+  &-thumb {
+    height: 40rem;
+    position: relative;
+    display: flex;
+  }
+  &-thumb__img {
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-thumb__img--last {
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  &-block {
+    margin-left: auto;
+  }
+  &-block__heading {
+    font-size: 3.6rem;
+    color: #232323;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &-form {
+    background-color: #f7f8fa;
+    box-shadow: 0 2px 4px rgba(#000, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 60rem;
+    text-align: center;
+  }
+  &-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  &-input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    &:focus {
+      outline: none;
+    }
+    &:focus:not(:placeholder-shown) ~ .login-label span,
+    &:focus ~ .login-label span {
+      transform: translateY(-3rem);
+    }
+  }
+  &-label {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    user-select: none;
+    pointer-events: none;
+  }
+  &-label span {
+    min-width: 5px;
+    display: inline-block;
+    color: #999;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1.56);
+  }
+  &-submit {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border: 1px solid $color-hover;
+    font-family: inherit;
+    font-size: 1.6rem;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      position: absolute;
+      background-color: $color-hover;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:hover::before {
+      width: 100%;
+      transition: all 0.3 linear;
+      border-color: none;
+    }
+  }
+  // Responsive
+  @include maxWidth(1023.98px) {
+    &-body {
+      flex-direction: column-reverse;
+      padding: 2rem;
+      gap: 2rem 0;
+    }
+    &-block {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &-thumb {
+      width: 100%;
+    }
+    &-form {
+      max-width: unset;
+    }
+  }
+  @include maxWidth(767.98px) {
+    &-thumb {
+      flex-wrap: wrap;
+    }
+    &-thumb__img {
+      width: calc(50% - 2rem);
+    }
+    &-thumb__img--last {
+      margin: 0;
+      margin-left: 4rem;
+    }
+  }
+}

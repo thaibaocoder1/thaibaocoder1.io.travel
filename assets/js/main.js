@@ -80,6 +80,7 @@ window.addEventListener("load", function () {
   const nextBtn = document.querySelector(".btn-right");
   const prevBtn = document.querySelector(".btn-left");
   const imgWidth = images[0].getBoundingClientRect().width;
+
   function setImgPosition(img, index) {
     img.style.left = imgWidth * index + "px";
   }
@@ -123,3 +124,4 @@ const gridImages = document.querySelectorAll(".grid-item");
     window.location.href = "../../tour.html";
   });
 });
+// Login transition with tag span
