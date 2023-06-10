@@ -125,3 +125,15 @@ const gridImages = document.querySelectorAll(".grid-item");
   });
 });
 // Login transition with tag span
+window.addEventListener("load", function () {
+  const labelList = document.querySelectorAll(".login-label");
+  labelList.forEach((label) => {
+    label.innerHTML = label.innerText
+      .split("")
+      .map(
+        (letter, index) =>
+          `<span style="transition-delay: ${index * 50}ms">${letter}</span>`
+      )
+      .join("");
+  });
+});

@@ -99,6 +99,9 @@
     &-item {
       scroll-snap-align: start;
     }
+    &-tour {
+      margin-top: 8rem;
+    }
   }
   @include maxWidth(767.98px) {
     padding: 5rem 0;

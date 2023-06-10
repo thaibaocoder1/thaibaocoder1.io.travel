@@ -7,14 +7,13 @@
   #gallery-carousel {
     .list {
       position: relative;
+      display: flex;
       transition: transform 0.5s ease-in-out;
     }
     .item {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
-      height: 100%;
     }
     .item img {
       width: 100vw;
